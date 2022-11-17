@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="input">Nhập từ cần tìm kiếm :</label>
+    <input type="text" name="M" id="T">
+    <br>
+    <label for="result"> Kết quả :</label>
+    <span id="result"></span>
+    <br>
+    <button type="button" onclick="dictionary()">Tìm kiếm</button>
+</body>
+<script>
+    function dictionary() {
+        let eng = ["Apple", "Banana", "Watermelon", "Cherry", "Strawberry"];
+        let viet = ["Quả táo", "Quả chuối", "Quả dưa hấu", "Quả anh đào", "Dâu tây"];
+        let search = document.getElementById("T").value;
+
+        for (i = 0; i < eng.length; i++) {
+            if (search == eng[i]) {
+                document.getElementById("result").innerHTML = viet[i];
+                break;
+            }
+            else {
+                document.getElementById("result").innerHTML = "Không có kết quả";
+            }
+        }
+    }
+
+</script>
+
+</html>

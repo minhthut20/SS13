@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Bai1.1
+        // myColor = ["Red", "Green", "White", "Black"];
+        // console.log(myColor.toString());
+        // console.log(myColor.join());
+        // console.log(myColor.join('+'));
+
+        // Bai1.2
+        // let number = prompt(" NHập các số :");
+        // let array = number.split("");
+        // let result = "";
+
+        // for ( i=0; i <= array.length-1; i++){
+        //     if((parseInt(array[i])%2 == 0)&&(parseInt(array[i+1])%2 == 0)){
+        //         result += array[i] + "-" ;
+        //     }
+        //     else{
+        //         result += array[i];
+        //     }
+        // }
+        // document.write(result);
+
+        // Bai1.3
+        let alphabet = prompt(" Nhập vào các kí tự :");
+        let array = alphabet.split("");
+        let result = "";
+
+        for (i = 0; i < array.length; i++) {
+            if (array[i].toUpperCase() === array[i]) {
+                array[i] = array[i].toLowerCase();
+                result += array[i];
+            }
+            else {
+                array[i] = array[i].toUpperCase();
+                result += array[i];
+            }
+        }
+        document.write(alphabet);
+        document.write("<br>");
+        document.write(result);
+
+    </script>
+
+</body>
+
+</html>
