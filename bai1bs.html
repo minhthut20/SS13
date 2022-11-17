@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // Bai1.6
+        // let a = []
+
+        // for (i = 0; i < 10; i++) {
+        //     a[i] = parseInt(prompt(" Nhập vào các kí tự :"))
+        // }
+        // let V = prompt(" Nhập vào số V");
+        // for (i = 0; i < 10; i++) {
+        //     if (V == a[1]) {
+        //         document.write(" V in the array");
+        //         break
+        //     }
+        //     else if (i == a.length - 1) {
+        //         document.write(" V is not in the array")
+        //     }
+        // }
+
+        // bai1.7
+        let a = []
+
+        for (i = 0; i < 10; i++){
+            a[i] = parseInt(prompt(" Nhập vào các kí tự :"));
+        }
+        let V = prompt(" Nhập vào số V");
+        document.write("Các kí tự nhập vào là :" + a + "<br>")
+        for ( i = 0; i < 10; i++){
+            if (V == a[i]) {
+                a.splice(i, 1);
+                a.push(0);
+            }
+        }
+        document.write("Kí tự sau khi chuyển đối :" + a)
+    </script>
+</body>
+
+</html>
